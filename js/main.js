@@ -84,3 +84,24 @@
 
     const newObj = {...q};
 
+//45 video
+function selectUser(name, id){
+    this.name = name; // побирангня кожного окркмого користувача
+    this.id = id; // побирангня кожного окрeмого id користувача
+    this.human = true; // значенні загальне для всіх користувачів
+    this.hello = function(){
+        console.log(`Hello ${this.name}`);
+    };
+}
+
+// виколристовуємо функцію конструктор "selectUser()" 
+//для вписування параметрів
+
+const ivan = new selectUser('Ivan', 28);
+const alex = new selectUser('Alex', 30);
+
+// ivan.hello();
+// alex.hello();
+
+
+console.log(ivan, "lsdfgb", alex);
